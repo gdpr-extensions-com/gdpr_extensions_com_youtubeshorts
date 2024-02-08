@@ -359,10 +359,10 @@
     </f:if>
 
     <div class="tabs">
-        <label class="tab" id="one-tab" for="one">Content</label>
-        <label class="tab" id="two-tab" for="two">Content Styling</label>
+        <label class="tab" id="one-tab" for="one"><f:translate key="content.tab" extensionName="GdprExtensionsComYoutubeshorts" /></label>
+        <label class="tab" id="two-tab" for="two"><f:translate key="content.style.tab" extensionName="GdprExtensionsComYoutubeshorts" /></label>
         <f:if condition="{googlemaps}">
-            <label class="tab" id="three-tab" for="three">Map Location</label>
+            <label class="tab" id="three-tab" for="three"><f:translate key="map.location" extensionName="GdprExtensionsComYoutubeshorts" /></label>
         </f:if>
 
     </div>
@@ -414,7 +414,7 @@
                 </f:if>
                 <f:form.textarea property="backgroundImage" id="backgroundImage" cols="40" rows="15"  class="d-none" /><br />
                 <div class="file-upload-wrapper my-4-9" id="selected-image-container">
-                    <button class="choose_file btn-bg-transparent" >Choose file</button>
+                    <button class="choose_file btn-bg-transparent" ><f:translate key="choose.file" extensionName="GdprExtensionsComYoutubeshorts" /></button>
                     <input
                         type="file"
                         id="file-input"
@@ -472,9 +472,9 @@
             </label><br />
             <div class="d-flex">
                 <f:form.select name="buttonShape" property="buttonShape" class="field-style mt-5px w-185px">
-                    <f:form.select.option value="0">Default</f:form.select.option>
-                    <f:form.select.option value="round">Round</f:form.select.option>
-                    <f:form.select.option value="square">Square</f:form.select.option>
+                    <f:form.select.option value="0"><f:translate key="shape.default" extensionName="GdprExtensionsComYoutubeshorts" /></f:form.select.option>
+                    <f:form.select.option value="round"><f:translate key="shape.round" extensionName="GdprExtensionsComYoutubeshorts" /></f:form.select.option>
+                    <f:form.select.option value="square"><f:translate key="shape.square" extensionName="GdprExtensionsComYoutubeshorts" /></f:form.select.option>
                 </f:form.select>
             </div>
             <br />

@@ -14,9 +14,7 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="content">
-    <h1>New GdprManager</h1>
-    <f:debug>{_all}</f:debug>
-    dfkgjhdfkjghdfkjghkdfjgh
+    <h1><f:translate key="new.gdpr" extensionName="GdprExtensionsComYoutubeshorts" /></h1>
 
     <f:flashMessages />
 
@@ -24,7 +22,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
     <f:form action="create" name="newGdprManager" object="{newGdprManager}">
     <f:render partial="GdprManager/FormFields" />
-    <f:form.submit value="Create new" />
+    <f:form.submit value="{f:translate(key:'create.btn', extensionName: 'GdprExtensionsComYoutubeshorts')}" />
     </f:form>
 </f:section>
 </html>
